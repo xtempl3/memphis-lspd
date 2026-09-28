@@ -1,0 +1,25 @@
+{
+ "name": "lspd-portal",
+ "private": true,
+ "scripts": {
+  "dev": "next dev",
+  "build": "prisma generate && next build",
+  "start": "next start",
+  "db:push": "prisma db push",
+  "postinstall": "prisma generate"
+ },
+ "dependencies": {
+  "next": "14.2.15",
+  "react": "18.3.1",
+  "react-dom": "18.3.1",
+  "next-auth": "4.24.7",
+  "@prisma/client": "5.20.0",
+  "@vercel/blob": "0.24.1"
+ },
+ "devDependencies": {
+  "prisma": "5.20.0",
+  "typescript": "5.6.2",
+  "@types/react": "18.3.11",
+  "@types/node": "20.16.10"
+ }
+}

@@ -1,0 +1,23 @@
+export const FORMS: Record<string, { title: string; desc: string; group: string; fields: { name: string; label: string; area?: boolean }[] }> = {
+  employment: { title: "Трудоустройство", desc: "Подать заявку на вступление в LSPD", group: "Электронные заявления",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"about",label:"О себе",area:true}] },
+  transfer_lspd: { title: "Перевод в LSPD", desc: "Перевод из другой организации", group: "Электронные заявления",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"org",label:"Текущая организация"},{name:"reason",label:"Причина",area:true}] },
+  restore: { title: "Восстановление", desc: "Восстановление в LSPD", group: "Электронные заявления",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"fired",label:"Причина и дата увольнения"},{name:"reason",label:"Почему хотите вернуться",area:true}] },
+  promotion: { title: "Запрос на повышение", desc: "Подать запрос на повышение", group: "Секретариат",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"rank",label:"Текущий ранг"},{name:"reason",label:"Обоснование",area:true}] },
+  resign: { title: "Заявление на увольнение", desc: "Подать заявление на увольнение", group: "Секретариат",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"reason",label:"Причина",area:true}] },
+  leave: { title: "Отпуск", desc: "OOC или IC отпуск", group: "Секретариат",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"kind",label:"Тип (OOC / IC)"},{name:"period",label:"Срок"},{name:"reason",label:"Причина",area:true}] },
+  weapons: { title: "Спец. вооружение", desc: "Запрос на получение спец вооружения", group: "Секретариат",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"weapon",label:"Вооружение"},{name:"reason",label:"Обоснование",area:true}] },
+  dept_transfer: { title: "Перевод в отдел", desc: "Перевод в другой отдел LSPD", group: "Отделы",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"rank",label:"Текущий ранг"},{name:"from",label:"Текущий отдел"},{name:"to",label:"Желаемый отдел"},{name:"reason",label:"Причина перевода",area:true},{name:"extra",label:"Дополнительные сведения",area:true}] },
+  dept_report: { title: "Отчёт о повышении", desc: "Отчёт для своего отдела", group: "Отделы",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"report",label:"Отчёт",area:true}] },
+  high_rank: { title: "Отчёт на повышение — Хай Ранги", desc: "Повышение для старшего состава", group: "Отделы",
+    fields: [{name:"nick",label:"Discord / игровой ник"},{name:"report",label:"Отчёт",area:true}] },
+};
+export const STATUS_RU: Record<string,string> = { PENDING:"На рассмотрении", APPROVED:"Одобрено", REJECTED:"Отклонено", CHANGES_REQUESTED:"Требуются изменения" };
